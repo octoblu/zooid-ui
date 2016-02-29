@@ -1,0 +1,27 @@
+{
+  "name": "zooid-ui",
+  "version": "1.0.0",
+  "description": "A collection of UI components for React projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha -- -R spec --require coffee-coverage/register-istanbul"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octoblu/zooid-ui.git"
+  },
+  "author": "Octoblu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/octoblu/zooid-ui/issues"
+  },
+  "homepage": "https://github.com/octoblu/zooid-ui#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "mocha-istanbul": "^0.2.0",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
+  }
+}

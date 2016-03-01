@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-// import MeshbluDeviceEditor from '../src/index'
-import { Message, TopBar } from '../src/index'
+import { Message, TopBar, TopBarTitle } from '../src/index'
 
 class Example extends Component {
   render() {
@@ -12,7 +11,9 @@ class Example extends Component {
 
         <div>
           <h2>Top Bar</h2>
-          <TopBar>Hello World</TopBar>
+          <TopBar>
+            <TopBarTitle>Top Bar Title</TopBarTitle>
+          </TopBar>
         </div>
 
         <div>

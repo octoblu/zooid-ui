@@ -3,20 +3,16 @@ import React, { Component, PropTypes } from 'react'
 
 import './index.css'
 
-export default class TopBar extends Component {
-  render() {
-    const { children, className } = this.props
-    const classes = classNames('TopBar', className)
+import TopBarTitle from './title'
 
-    return (
-      <header className={classes}>
-        {this.props.children}
-      </header>
-    )
-  }
+const TopBar = ({ children, className }) => {
+  const classes = classNames('TopBar', className)
+  return <header className={classes}>{children}</header>
 }
 
 TopBar.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string
 }
+
+export { TopBar, TopBarTitle }

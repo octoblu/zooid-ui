@@ -47,3 +47,7 @@
 .Message--info a {
   color: #00B0E9;
 }
+
+.Message--fullWidth {
+  text-align: center;
+}

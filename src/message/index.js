@@ -3,10 +3,11 @@ import React, { PropTypes } from 'react'
 
 import './index.css'
 
-const Message = ({ children, className, type, dismissible }) => {
+const Message = ({ children, className, type, fullWidth }) => {
   const classes = classNames(
     'Message',
     `Message--${type}`,
+    {'Message--fullWidth': fullWidth},
     className
   )
 
@@ -24,14 +25,15 @@ const MESSAGE_TYPES = [
 
 Message.defaultProps = {
   type: MESSAGE_TYPES[0],
-  dismissible: false
+  dismissible: false,
+  fullWidth: false
 }
 
 Message.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   type: PropTypes.oneOf(MESSAGE_TYPES),
-  dismissible: PropTypes.bool
+  fullWidth: PropTypes.bool
 }
 
 export default Message

@@ -35,6 +35,12 @@ class Example extends Component {
             <strong>Error: </strong>
             This is an error message <a href="#">with a link</a>
           </Message>
+
+          <h3>Full Width Message</h3>
+
+          <Message fullWidth>
+            This is a full width message with text aligned to the center
+          </Message>
         </div>
       </div>
     )

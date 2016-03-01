@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { Button, Message, TopBar, TopBarTitle, TopBarNav } from '../src/index'
+import { Button, Card, Message, TopBar, TopBarTitle, TopBarNav } from '../src/index'
 
 import './style.css'
 
@@ -53,7 +53,13 @@ class Example extends Component {
           <Button disabled kind="hollow-danger">Hollow Danger Button</Button>
           <Button disabled kind="hollow-neutral">Hollow Neutral Button</Button>
           <Button disabled kind="no-style">No Style Button</Button>
+        </section>
 
+        <section className="Cards">
+          <h2>Card</h2>
+          <Card>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </Card>
         </section>
 
         <section>

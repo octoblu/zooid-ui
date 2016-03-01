@@ -1,7 +1,9 @@
-// require('./icons.css')
-// require('material-design-lite/material.min.css')
+import './base.css'
+
+import Message from './message'
 import TopBar from './top-bar'
 
 export {
+  Message,
   TopBar
 }

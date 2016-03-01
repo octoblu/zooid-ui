@@ -1,0 +1,49 @@
+.Message {
+  border-radius: 1px;
+  display: block;
+  margin-bottom: 12px;
+  padding: 12px;
+
+  font-size: 16px;
+}
+
+.Message a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.Message--alert {
+  color: #F18902;
+  background: #FFEED7;
+}
+
+.Message--alert a {
+  color: #F18902;
+}
+
+.Message--error {
+  color: #CA2329;
+  background: rgba(202, 35, 41, 0.07);
+}
+
+.Message--error a {
+  color: #CA2329;
+}
+
+.Message--success {
+  color: green;
+  background: rgba(0, 128, 0, 0.07);
+}
+
+.Message--success a {
+  color: green;
+}
+
+.Message--info {
+  background-color: #E3F8FF;
+  color: #00B0E9;
+}
+
+.Message--info a {
+  color: #00B0E9;
+}

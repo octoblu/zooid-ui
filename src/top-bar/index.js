@@ -1,4 +1,4 @@
-import classNames from 'classNames'
+import classNames from 'classnames'
 import React, { Component, PropTypes } from 'react'
 
 import './index.css'

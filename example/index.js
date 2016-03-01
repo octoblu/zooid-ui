@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { Button, Card, Icon, List, ListItem, ListItemIcon, Message, TopBar, TopBarTitle, TopBarNav } from '../src/index'
+import { Button, Card, Icon, List, ListItem, ListItemIcon, Message, ProgressBar, TopBar, TopBarTitle, TopBarNav } from '../src/index'
 
 import './style.css'
 
@@ -106,6 +106,11 @@ class Example extends Component {
               </ListItem>
             </List>
           </SubSection>
+        </Section>
+
+
+        <Section title="Progress Bar">
+          <ProgressBar completed={50}/>
         </Section>
 
         <Section title="Message">

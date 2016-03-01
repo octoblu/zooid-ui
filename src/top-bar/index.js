@@ -8,6 +8,7 @@ import TopBarNav from './nav'
 
 const TopBar = ({ children, className }) => {
   const classes = classNames('TopBar', className)
+  
   return <header className={classes}>{children}</header>
 }
 

@@ -11,9 +11,7 @@ const Message = ({ children, className, type, fullWidth }) => {
     className
   )
 
-  return <div className={classes}>
-    {children}
-  </div>
+  return <div className={classes}>{children}</div>
 }
 
 const MESSAGE_TYPES = [

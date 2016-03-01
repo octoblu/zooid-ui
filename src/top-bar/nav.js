@@ -9,11 +9,7 @@ const TopBarNav = ({children, className}) => {
     className
   )
 
-  return (
-    <nav className={classes} role='navigation'>
-      {children}
-    </nav>
-  )
+  return <nav className={classes} role='navigation'>{children}</nav>
 }
 
 TopBarNav.propTypes = {

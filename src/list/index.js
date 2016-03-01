@@ -8,6 +8,7 @@ import ListItemIcon from './icon'
 
 const List = ({ children, className }) => {
   const classes = classNames('List', className)
+  
   return <ul className={classes}>{children}</ul>
 }
 

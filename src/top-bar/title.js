@@ -5,6 +5,7 @@ import './index.css'
 
 const TopBarTitle = ({ children, className }) => {
   const componentClass = classNames('TopBar-title', className)
+  
   return <h1 className={componentClass}>{children}</h1>
 }
 

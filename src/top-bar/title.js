@@ -4,9 +4,9 @@ import classNames from 'classnames'
 import './index.css'
 
 const TopBarTitle = ({ children, className }) => {
-  const componentClass = classNames('TopBar-title', className)
+  const classes = classNames('TopBar-title', className)
   
-  return <h1 className={componentClass}>{children}</h1>
+  return <h1 className={classes}>{children}</h1>
 }
 
 TopBarTitle.propTypes = {

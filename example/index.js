@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { Message, TopBar, TopBarTitle, TopBarNav } from '../src/index'
+import { Button, Message, TopBar, TopBarTitle, TopBarNav } from '../src/index'
+
+import './style.css'
 
 class Example extends Component {
   render() {
@@ -9,7 +11,7 @@ class Example extends Component {
       <div>
         <h1>Zooid UI</h1>
 
-        <div>
+        <section>
           <h2>Top Bar</h2>
           <TopBar>
             <TopBarTitle>Top Bar Title</TopBarTitle>
@@ -20,9 +22,41 @@ class Example extends Component {
               <a className="TopBar-navLink">Link 4</a>
             </TopBarNav>
           </TopBar>
-        </div>
+        </section>
 
-        <div>
+        <section className="Buttons">
+          <h2>Buttons</h2>
+          <Button>Button</Button>
+          <Button kind="primary">Primary Button</Button>
+          <Button kind="approve">Approve Button</Button>
+          <Button kind="danger">Danger Button</Button>
+          <Button kind="neutral">Neutral Button</Button>
+          <Button kind="hollow-primary">Hollow Primary Button</Button>
+          <Button kind="hollow-approve">Hollow Approve Button</Button>
+          <Button kind="hollow-danger">Hollow Danger Button</Button>
+          <Button kind="hollow-neutral">Hollow Neutral Button</Button>
+          <Button kind="no-style">No Style Button</Button>
+
+          <h3>Button Sizes</h3>
+          <Button size="large">Large Button</Button>
+          <Button size="regular">Regular Button</Button>
+          <Button size="small">Small Button</Button>
+
+          <h3>Disabled Buttons</h3>
+          <Button disabled>Button</Button>
+          <Button disabled kind="primary">Primary Button</Button>
+          <Button disabled kind="approve">Approve Button</Button>
+          <Button disabled kind="danger">Danger Button</Button>
+          <Button disabled kind="neutral">Neutral Button</Button>
+          <Button disabled kind="hollow-primary">Hollow Primary Button</Button>
+          <Button disabled kind="hollow-approve">Hollow Approve Button</Button>
+          <Button disabled kind="hollow-danger">Hollow Danger Button</Button>
+          <Button disabled kind="hollow-neutral">Hollow Neutral Button</Button>
+          <Button disabled kind="no-style">No Style Button</Button>
+
+        </section>
+
+        <section>
           <h2>Message</h2>
 
           <Message>
@@ -48,7 +82,7 @@ class Example extends Component {
           <Message fullWidth>
             This is a full width message with text aligned to the center
           </Message>
-        </div>
+        </section>
       </div>
     )
 

@@ -1,0 +1,134 @@
+.Button {
+  display: inline-block;
+  border:none;
+  border-radius: 2px;
+  padding: 12px 24px;
+
+  background: #EAEAEA;
+
+  font-size: 16px;
+  font-family: "citrixsans-regular", Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  transition-delay: 0;
+  transition-duration: .33s;
+  transition-timing-function: ease-in;
+  transition-property: background, border-color;
+}
+
+.Button:focus {
+  outline: none;
+}
+
+
+button[disabled],
+.Button--disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.Button--primary {
+  background: #14568F;
+  color: white;
+}
+
+.Button--approve {
+  background: green;
+  color: white;
+}
+
+.Button--danger {
+  background: #CA2329;
+  color: white;
+}
+
+.Button--danger:hover {
+  background: #B72126;
+}
+
+.Button--neutral {
+  background: #6e798b;
+  color: white;
+}
+
+.Button--hollow-primary {
+  border: 2px solid #14568F;
+  color: #14568F;
+  padding: 10px 22px;
+  background: transparent;
+}
+
+.Button--hollow-primary:hover {
+  background: rgba(45, 114, 217, 0.07);
+}
+
+.Button--hollow-approve {
+  border: 2px solid green;
+  color: green;
+  padding: 10px 22px;
+  background: transparent;
+}
+
+.Button--hollow-approve:hover {
+  background: rgba(0, 128, 0, 0.07);
+}
+
+.Button--hollow-danger {
+  border: 2px solid #CA2329;
+  color: #CA2329;
+  padding: 10px 22px;
+  background: transparent;
+}
+
+.Button--hollow-danger:hover {
+  background: rgba(202, 35, 41, 0.07);
+}
+
+.Button--hollow-neutral {
+  border: 2px solid #6e798b;
+  color: #6e798b;
+  padding: 10px 22px;
+  background: transparent;
+}
+
+.Button--hollow-neutral:hover {
+  background: rgba(110, 121, 139, 0.1);
+}
+
+.Button--no-style {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  border-radius: 0;
+}
+
+.Button--small {
+  font-size: 12px;
+}
+
+.Button--large {
+  font-size: 22px;
+}
+
+.Button--jumbo {
+  width: 100%;
+  padding: 24px;
+
+  color: #FFF;
+  font-size: 21px;
+  font-family: 'citrixsans-semibold', sans-serif;
+  text-decoration: none;
+
+  background: #0091de;
+}
+
+.Button--jumbo:hover {
+  background: #0075c4;
+  color: #FFF;
+}

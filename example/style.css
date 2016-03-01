@@ -1,0 +1,11 @@
+body {
+  background: #F3F6F7;
+}
+
+section {
+  padding: 24px;
+}
+
+section.Buttons Button {
+  margin: 0 12px 12px 0;
+}

@@ -77,16 +77,6 @@ class Example extends Component {
           </SubSection>
         </Section>
 
-        <Section title="Icons">
-
-        </Section>
-
-        <Section title="Channel Image" className="ChannelImages">
-          <ChannelImage name="twitter"/>
-          <ChannelImage name="sharefile"/>
-          <ChannelImage name="gotomeeting"/>
-        </Section>
-
         <Section title="Card" className="Cards">
           <Card>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -114,9 +104,17 @@ class Example extends Component {
           </SubSection>
         </Section>
 
+        <Section title="Channel Image" className="ChannelImages">
+          <ChannelImage name="twitter"/>
+          <ChannelImage name="sharefile"/>
+          <ChannelImage name="gotomeeting"/>
+        </Section>
+
+        <Section title="Icons">
+        </Section>
 
         <Section title="Progress Bar">
-          <ProgressBar completed={50}/>
+          <ProgressBar completed={77}/>
         </Section>
 
         <Section title="Message">

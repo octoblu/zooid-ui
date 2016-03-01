@@ -4,6 +4,12 @@
 
 .List-item {
   padding: 12px;
+  background: #FFF;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.List-item:last-child {
+  border: none;
 }
 
 .List-itemIcon {

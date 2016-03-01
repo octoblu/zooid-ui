@@ -4,6 +4,15 @@ import { Button, Card, Message, TopBar, TopBarTitle, TopBarNav } from '../src/in
 
 import './style.css'
 
+const Section = ({children, title}) => {
+  return (
+    <section>
+      <h2>{title}</h2>
+      {children}
+    </section>
+  )
+}
+
 class Example extends Component {
   render() {
     console.log('TopBar', TopBar);
@@ -11,8 +20,7 @@ class Example extends Component {
       <div>
         <h1>Zooid UI</h1>
 
-        <section>
-          <h2>Top Bar</h2>
+        <Section title="Top Bar">
           <TopBar>
             <TopBarTitle>Top Bar Title</TopBarTitle>
             <TopBarNav>
@@ -22,10 +30,9 @@ class Example extends Component {
               <a className="TopBar-navLink">Link 4</a>
             </TopBarNav>
           </TopBar>
-        </section>
+        </Section>
 
-        <section className="Buttons">
-          <h2>Buttons</h2>
+        <Section title="Buttons" className="Buttons">
           <Button>Button</Button>
           <Button kind="primary">Primary Button</Button>
           <Button kind="approve">Approve Button</Button>
@@ -53,18 +60,15 @@ class Example extends Component {
           <Button disabled kind="hollow-danger">Hollow Danger Button</Button>
           <Button disabled kind="hollow-neutral">Hollow Neutral Button</Button>
           <Button disabled kind="no-style">No Style Button</Button>
-        </section>
+        </Section>
 
-        <section className="Cards">
-          <h2>Card</h2>
+        <Section title="Card" className="Cards">
           <Card>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </Card>
-        </section>
+        </Section>
 
-        <section>
-          <h2>Message</h2>
-
+        <Section title="Message">
           <Message>
             This is a regular <a href="#">with a link</a>
           </Message>
@@ -88,7 +92,7 @@ class Example extends Component {
           <Message fullWidth>
             This is a full width message with text aligned to the center
           </Message>
-        </section>
+        </Section>
       </div>
     )
 

@@ -1,4 +1,4 @@
-import 'normalize.css'
+import 'suitcss-base'
 import './base.css'
 
 import Button from './button'

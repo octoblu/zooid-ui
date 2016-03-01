@@ -1,14 +1,13 @@
+// TODO: Add Size variations: small, medium, large & block/full width
 import React, { PropTypes } from 'react'
 
 import './index.css'
 
 import classNames from 'classnames';
 
-
 const Card = ({children, className}) => {
-  const componentClass = classNames('Card', className);
-
-  return <div className={componentClass}>{children}</div>
+  const classes = classNames('Card', className);
+  return <div className={classes}>{children}</div>
 }
 
 Card.propTypes = {

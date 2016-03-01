@@ -4,6 +4,7 @@ import React, { Component, PropTypes } from 'react'
 import './index.css'
 
 import TopBarTitle from './title'
+import TopBarNav from './nav'
 
 const TopBar = ({ children, className }) => {
   const classes = classNames('TopBar', className)
@@ -15,4 +16,4 @@ TopBar.propTypes = {
   className: PropTypes.string
 }
 
-export { TopBar, TopBarTitle }
+export { TopBar, TopBarTitle, TopBarNav }

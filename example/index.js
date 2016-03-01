@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { Message, TopBar, TopBarTitle } from '../src/index'
+import { Message, TopBar, TopBarTitle, TopBarNav } from '../src/index'
 
 class Example extends Component {
   render() {
@@ -13,6 +13,12 @@ class Example extends Component {
           <h2>Top Bar</h2>
           <TopBar>
             <TopBarTitle>Top Bar Title</TopBarTitle>
+            <TopBarNav>
+              <a className="TopBar-navLink TopBar-navLink--active">Link 1</a>
+              <a className="TopBar-navLink">Link 2</a>
+              <a className="TopBar-navLink">Link 3</a>
+              <a className="TopBar-navLink">Link 4</a>
+            </TopBarNav>
           </TopBar>
         </div>
 

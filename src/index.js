@@ -2,10 +2,11 @@ import 'normalize.css'
 import './base.css'
 
 import Message from './message'
-import { TopBar, TopBarTitle } from './top-bar'
+import { TopBar, TopBarTitle, TopBarNav } from './top-bar'
 
 export {
   Message,
   TopBar,
-  TopBarTitle
+  TopBarTitle,
+  TopBarNav
 }

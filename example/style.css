@@ -17,3 +17,7 @@ body {
 .Section.Buttons Button {
   margin: 0 12px 12px 0;
 }
+
+.ChannelImages .ChannelImage {
+  max-width: 100px;
+}

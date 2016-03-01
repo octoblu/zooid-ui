@@ -1,0 +1,12 @@
+.List {
+  padding: 12px 0;
+}
+
+.List-item {
+  padding: 12px;
+}
+
+.List-itemIcon {
+  font-size: 24px;
+  margin-right: 12px;
+}

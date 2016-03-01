@@ -2,10 +2,18 @@ body {
   background: #F3F6F7;
 }
 
-section {
+.Section {
   padding: 24px;
 }
 
-section.Buttons Button {
+.Section--sub {
+  margin-top: 24px;
+}
+
+.Section-title {
+  margin-bottom: 12px;
+}
+
+.Section.Buttons Button {
   margin: 0 12px 12px 0;
 }

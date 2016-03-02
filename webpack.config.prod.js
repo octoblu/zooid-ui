@@ -34,9 +34,18 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['babel'],
-        include: path.join(__dirname, 'index.js')
+        loader: 'babel',
+        exclude: /(node_modules|example)/
+      },
+      {
+        test:   /\.css$/,
+        loader: "style-loader!css-loader!postcss-loader"
       }
+    ]
+  },
+  postcss: function (webpack) {
+    return [
+      autoprefixer
     ]
   }
 }

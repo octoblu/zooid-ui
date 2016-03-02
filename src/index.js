@@ -1,5 +1,5 @@
-import 'suitcss-base'
-import './base.css'
+// import 'suitcss-base'
+// import './base.css'
 
 import Button from './button'
 import Card from './card'

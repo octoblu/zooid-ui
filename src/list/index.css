@@ -1,9 +1,9 @@
 .List {
-  padding: 12px 0;
+  padding: 16px 0;
 }
 
 .List-item {
-  padding: 12px;
+  padding: 16px;
   background: #FFF;
   border-bottom: 1px solid #EAEAEA;
 }
@@ -14,5 +14,5 @@
 
 .List-itemIcon {
   font-size: 24px;
-  margin-right: 12px;
+  margin-right: 16px;
 }

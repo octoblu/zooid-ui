@@ -1,0 +1,16 @@
+
+body {
+  color: #485264;
+  font-family: 'citrixsans-regular', sans-serif;
+  font-size: 16px;
+
+  background: #F3F6F7;
+}
+
+a {
+  color: #1671A6;
+}
+
+a:hover {
+  color: #156889;
+}

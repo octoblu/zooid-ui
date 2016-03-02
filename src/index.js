@@ -1,5 +1,6 @@
 import 'suitcss-base'
-import './base.css'
+import './styles/handglide/fonts.css'
+import './styles/base.css'
 
 import Button from './button'
 import Card from './card'

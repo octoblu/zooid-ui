@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build:webpack": "NODE_ENV=production webpack -p --display-reasons --progress --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
     "start": "node dev-server.js",
     "lint": "eslint src/index.js"
@@ -37,6 +37,7 @@
     "eslint-plugin-react": "^4.1.0",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.4",
+    "extract-text-webpack-plugin": "^1.0.1",
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
     "mocha-istanbul": "^0.2.0",

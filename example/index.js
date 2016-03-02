@@ -41,8 +41,10 @@ class Example extends Component {
   render() {
     return (
       <div>
-        <h1>Zooid UI</h1>
-
+        <TopBar>
+          <TopBarTitle>Zooid UI</TopBarTitle>
+        </TopBar>
+        
         <Section title="Top Bar">
           <TopBar>
             <TopBarTitle>Top Bar Title</TopBarTitle>

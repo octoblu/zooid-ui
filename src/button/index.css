@@ -4,7 +4,7 @@
   border-radius: 2px;
   padding: 12px 24px;
 
-  background: #EAEAEA;
+  background: #E3E3E3;
 
   font-size: 16px;
   font-family: "citrixsans-regular", Arial, Helvetica, sans-serif;
@@ -39,9 +39,17 @@ button[disabled],
   color: white;
 }
 
+.Button--primary:hover {
+  background: #104B7E;
+}
+
 .Button--approve {
-  background: green;
+  background: #008000;
   color: white;
+}
+
+.Button--approve:hover {
+  background: #017401;
 }
 
 .Button--danger {
@@ -70,8 +78,8 @@ button[disabled],
 }
 
 .Button--hollow-approve {
-  border: 2px solid green;
-  color: green;
+  border: 2px solid #008000;
+  color: #008000;
   padding: 10px 22px;
   background: transparent;
 }
@@ -103,12 +111,19 @@ button[disabled],
 }
 
 .Button--no-style {
-  background: transparent;
   border: none;
+  border-radius: 0;
   padding: 0;
   margin: 0;
+
+  color: #14568F;
   text-align: left;
-  border-radius: 0;
+
+  background: transparent;
+}
+
+.Button--no-style:hover {
+  color: #156889;
 }
 
 .Button--small {

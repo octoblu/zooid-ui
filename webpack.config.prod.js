@@ -4,7 +4,7 @@ var autoprefixer      = require('autoprefixer')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
-  // devtool: 'cheap-module-source-map',
+  devtool: 'cheap-module-source-map',
   entry: [
     './src/index'
   ],
@@ -33,7 +33,7 @@ module.exports = {
 
     // This plugins optimizes chunks and modules by
     // how much they are used in your app
-    // new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.OccurenceOrderPlugin(),
 
     // This plugin minifies all the Javascript code of the final bundle
     // new webpack.optimize.UglifyJsPlugin({

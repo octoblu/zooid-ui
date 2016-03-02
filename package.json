@@ -2,10 +2,10 @@
   "name": "zooid-ui",
   "version": "1.0.0",
   "description": "A collection of UI components for React projects.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build:webpack": "NODE_ENV=production webpack -p --display-reasons --progress --config webpack.config.prod.js",
+    "build:webpack": "NODE_ENV=production webpack --progress --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
     "start": "node dev-server.js",
     "lint": "eslint src/index.js"

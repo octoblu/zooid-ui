@@ -1,3 +1,4 @@
+import blacklist from 'blacklist'
 import classNames from 'classnames'
 import React, { Component, PropTypes } from 'react'
 
@@ -10,15 +11,13 @@ class Button extends Component {
 
   render() {
     const {
-      children,
+      block,
       className,
+      component,
       disabled,
       href,
       kind,
-      draggable,
-      onClick,
-      size,
-      type
+      size
     } = this.props
 
 
@@ -26,23 +25,21 @@ class Button extends Component {
       'Button',
       `Button--${kind}`,
       `Button--${size}`,
+      {'Button--block': block},
       {'Button--disabled': disabled},
       className
     )
 
+    let props = blacklist(this.props, 'block', 'className', 'component', 'disabled', 'kind', 'size')
+    props.className = classes
+
     let tag = 'button'
     if (href) tag = 'a'
 
-    const properties = {
-      className: classes,
-      disabled,
-      draggable,
-      href,
-      onClick,
-      type
-    }
 
-    return React.createElement(tag, properties, children)
+    if (component) return React.cloneElement(component, props)
+
+    return React.createElement(tag, props, props.children)
   }
 }
 
@@ -67,7 +64,9 @@ Button.defaultProps = {
 }
 
 Button.propTypes = {
+  block: PropTypes.bool,
   className: PropTypes.string,
+  component: PropTypes.element,
   disabled: PropTypes.bool,
   href: PropTypes.string,
   kind: PropTypes.oneOf(BUTTON_KINDS),

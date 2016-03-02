@@ -75,6 +75,10 @@ class Example extends Component {
             <Button disabled kind="hollow-neutral">Hollow Neutral Button</Button>
             <Button disabled kind="no-style">No Style Button</Button>
           </SubSection>
+
+          <SubSection title="Block Buttons">
+            <Button block kind="primary">Block Button</Button>
+          </SubSection>
         </Section>
 
         <Section title="Card" className="Cards">

@@ -24,6 +24,9 @@
   outline: none;
 }
 
+.Button--block {
+  width: 100%;
+}
 
 button[disabled],
 .Button--disabled {

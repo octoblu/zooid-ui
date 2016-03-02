@@ -53,6 +53,7 @@
     "webpack-hot-middleware": "^2.7.1"
   },
   "dependencies": {
+    "blacklist": "^1.1.2",
     "classnames": "^2.2.3",
     "react": "^0.14.7",
     "react-icons": "^1.0.3",

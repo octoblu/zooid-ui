@@ -1,13 +1,16 @@
-import React, { PropTypes } from 'react'
 import classNames from 'classnames'
+import React, { PropTypes } from 'react'
 
+import './index.css'
+
+import PageActions from './actions'
 import PageHeader from './header'
 import PageTitle from './title'
-import PageActions from './actions'
 
 const Page = ({ children, className }) => {
   const classes = classNames('Page', className)
-  return <div className={classes}>{children}</div>
+
+  return <main className={classes}>{children}</main>
 }
 
-export {Page, PageHeader, PageTitle, PageActions}
+export {Page, PageActions, PageHeader, PageTitle}

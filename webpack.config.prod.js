@@ -10,7 +10,7 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'zooid-ui.js',
+    filename: 'index.js',
     libraryTarget: 'umd',
     library: 'ZooidUI'
   },

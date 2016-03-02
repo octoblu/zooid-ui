@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "A collection of UI components for React projects.",
   "main": "dist/index.js",
+  "style": "dist/style.css"
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "NODE_ENV=production webpack --progress --config webpack.config.prod.js",

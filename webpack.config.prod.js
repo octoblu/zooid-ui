@@ -25,7 +25,7 @@ module.exports = {
   plugins: [
     new webpack.NoErrorsPlugin(),
 
-    new ExtractTextPlugin("[name].css"),
+    new ExtractTextPlugin("style.css"),
 
     // This plugin looks for similar chunks and files
     // and merges them for better caching by the user

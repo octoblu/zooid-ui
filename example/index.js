@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { Button, Card, ChannelImage, Icon, List, ListItem, ListItemIcon, Message, ProgressBar, TopBar, TopBarTitle, TopBarNav } from '../src/index'
+import { Button, Card, ChannelImage, Icon, List, ListItem, ListItemIcon, Message, Nav, ProgressBar, TopBar, TopBarTitle, TopBarNav } from '../src/index'
 
 import './style.css'
 
@@ -43,6 +43,15 @@ class Example extends Component {
               <a className="TopBar-navLink">Link 4</a>
             </TopBarNav>
           </TopBar>
+        </Section>
+
+        <Section title="Navigation">
+          <Nav>
+            <a className="Nav-item Nav-item--active">Link 1</a>
+            <a className="Nav-item">Link 2</a>
+            <a className="Nav-item">Link 3</a>
+            <a className="Nav-item">Link 4</a>
+          </Nav>
         </Section>
 
         <Section title="Buttons" className="Buttons">

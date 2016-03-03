@@ -1,0 +1,41 @@
+.Nav {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  font-family: 'citrixsans-regular', sans-serif;
+}
+
+.Nav-item {
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  padding: 0 20px;
+
+  color: #485264;
+  font-size: 16px;
+  text-transform: none;
+  text-decoration: none;
+  line-height: 50px;
+
+  cursor: pointer;
+}
+
+.Nav-item:hover {
+  color: #444;
+  text-decoration: none;
+}
+
+.Nav-item:focus {
+  outline: none;
+}
+
+.Nav-item--active {
+  border-color: #14568F;
+  color: #14568F;
+  text-decoration: none;
+  font-family: 'citrixsans-bold', sans-serif;
+  cursor: default;
+}
+
+.Nav-item--active:hover {
+  color: #14568F;
+}

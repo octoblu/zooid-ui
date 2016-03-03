@@ -8,6 +8,7 @@ import ChannelImage from './channel-image'
 import Icon from './icon'
 import { List, ListItem, ListItemIcon } from './list'
 import Message from './message'
+import Nav from './nav'
 import ProgressBar from './progress-bar'
 import { TopBar, TopBarTitle, TopBarNav } from './top-bar'
 
@@ -20,6 +21,7 @@ export {
   ListItem,
   ListItemIcon,
   Message,
+  Nav,
   ProgressBar,
   TopBar,
   TopBarTitle,

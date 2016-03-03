@@ -1,0 +1,51 @@
+.Form {
+  font-family:"citrixsans-regular", Arial, Helvetica, sans-serif;
+  background: oldlace;
+}
+
+.Form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.Form-label {
+  font-family:"citrixsans-bold", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.Form-input {
+  border-radius: 3px;
+  border: 1px solid #E6EAED;
+  display: block;
+  padding: 10px;
+  width: 100%;
+
+  font-size: 16px;
+  font-family: "citrixsans-regular", Arial, Helvetica, sans-serif;
+
+  -webkit-appearance: none;
+}
+
+.Form-input:focus {
+  border: 1px solid #14568F;
+  outline: none;
+  background-color: #f8fdff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px rgba(19, 133, 229, 0.1);
+  transition: all 0.2s ease-in;
+}
+
+.Form-input:disabled {
+  background-color: #fafbfb;
+  cursor: not-allowed;
+}
+
+.Form-input:required:focus {
+ border: 1px solid #fec57b;
+ background-color: #fff9f2;
+}
+
+.Form-actions {
+}

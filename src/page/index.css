@@ -1,0 +1,25 @@
+.Page {
+  min-height: 100%;
+  width: 100%;
+  max-width: 1044px;
+  margin: 32px auto;
+}
+
+.Page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.Page-title {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+
+  font-size: 32px;
+}
+
+.Page-actions {
+  margin-left: 16px;
+}

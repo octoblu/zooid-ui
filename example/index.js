@@ -1,7 +1,19 @@
 import classNames from 'classnames'
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { Button, Card, ChannelImage, Icon, List, ListItem, ListItemIcon, Message, Nav, ProgressBar, TopBar, TopBarTitle, TopBarNav } from '../src/index'
+import {
+  Breadcrumb,
+  Button,
+  Card,
+  ChannelImage,
+  Icon,
+  List, ListItem, ListItemIcon,
+  Message,
+  Page, PageActions, PageHeader, PageTitle,
+  ProgressBar,
+  Spinner,
+  TopBar, TopBarTitle, TopBarNav
+} from '../src/index'
 
 import './style.css'
 
@@ -31,7 +43,9 @@ class Example extends Component {
   render() {
     return (
       <div>
-        <h1>Zooid UI</h1>
+        <TopBar>
+          <TopBarTitle>Zooid UI</TopBarTitle>
+        </TopBar>
 
         <Section title="Top Bar">
           <TopBar>
@@ -52,6 +66,14 @@ class Example extends Component {
             <a className="Nav-item">Link 3</a>
             <a className="Nav-item">Link 4</a>
           </Nav>
+
+        <Section title="Page">
+          <Page>
+            <PageHeader>
+              <PageTitle>Page Title Goes Here</PageTitle>
+              <PageActions>Page Actions</PageActions>
+            </PageHeader>
+          </Page>
         </Section>
 
         <Section title="Buttons" className="Buttons">
@@ -67,9 +89,9 @@ class Example extends Component {
           <Button kind="no-style">No Style Button</Button>
 
           <SubSection title="Button Sizes">
-            <Button size="large">Large Button</Button>
-            <Button size="regular">Regular Button</Button>
             <Button size="small">Small Button</Button>
+            <Button size="regular">Regular Button</Button>
+            <Button size="large">Large Button</Button>
           </SubSection>
 
           <SubSection title="Disabled Buttons">
@@ -85,8 +107,49 @@ class Example extends Component {
             <Button disabled kind="no-style">No Style Button</Button>
           </SubSection>
 
+          <SubSection title="Icon Buttons">
+            <Button kind="primary"><Icon name="MdAdd"/> Add Device</Button>
+            <Button kind="approve"><Icon name="MdCheck"/> Approve</Button>
+            <Button kind="danger"><Icon name="MdWarning"/> Reject</Button>
+            <Button kind="neutral"><Icon name="MdWarning"/> Ummm...</Button>
+          </SubSection>
+
+          <SubSection title="Icon Only Buttons">
+            <Button kind="primary"><Icon name="MdAdd"/></Button>
+            <Button kind="approve"><Icon name="MdCheck"/></Button>
+            <Button kind="danger"><Icon name="MdWarning"/></Button>
+            <Button kind="neutral"><Icon name="MdWarning"/></Button>
+          </SubSection>
+
           <SubSection title="Block Buttons">
             <Button block kind="primary">Block Button</Button>
+          </SubSection>
+        </Section>
+
+        <Section title="Breadcrumbs" className="Breadcrumbs">
+          <Breadcrumb fragments={[
+            {
+              label: 'My Gateblus',
+              slug: '/'
+            },
+            {
+              label: 'Fancy GateBlu',
+            }
+          ]}/>
+
+          <SubSection title="Breadcrumbs with custom components">
+            <Breadcrumb fragments={[
+              {
+                component: <Button href="/" kind="no-style">B for Button</Button>
+              },
+              {
+                label: 'Fancy GateBlu',
+                slug: '#'
+              },
+              {
+                label: 'Configure'
+              }
+            ]}/>
           </SubSection>
         </Section>
 
@@ -128,6 +191,12 @@ class Example extends Component {
 
         <Section title="Progress Bar">
           <ProgressBar completed={77}/>
+        </Section>
+
+        <Section title="Spinner">
+          <Spinner size="small"/>
+          <Spinner />
+          <Spinner size="large"/>
         </Section>
 
         <Section title="Message">

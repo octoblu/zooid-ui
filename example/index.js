@@ -99,6 +99,20 @@ class Example extends Component {
             <Button disabled kind="no-style">No Style Button</Button>
           </SubSection>
 
+          <SubSection title="Icon Buttons">
+            <Button kind="primary"><Icon name="MdAdd"/> Add Device</Button>
+            <Button kind="approve"><Icon name="MdCheck"/> Approve</Button>
+            <Button kind="danger"><Icon name="MdWarning"/> Reject</Button>
+            <Button kind="neutral"><Icon name="MdWarning"/> Ummm...</Button>
+          </SubSection>
+
+          <SubSection title="Icon Only Buttons">
+            <Button kind="primary"><Icon name="MdAdd"/></Button>
+            <Button kind="approve"><Icon name="MdCheck"/></Button>
+            <Button kind="danger"><Icon name="MdWarning"/></Button>
+            <Button kind="neutral"><Icon name="MdWarning"/></Button>
+          </SubSection>
+
           <SubSection title="Block Buttons">
             <Button block kind="primary">Block Button</Button>
           </SubSection>

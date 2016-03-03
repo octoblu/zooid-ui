@@ -7,8 +7,10 @@ import {
   Card,
   ChannelImage,
   Icon,
+  Form, FormActions, FormField, FormInput,
   List, ListItem, ListItemIcon,
   Message,
+  Nav,
   Page, PageActions, PageHeader, PageTitle,
   ProgressBar,
   Spinner,
@@ -42,7 +44,7 @@ class Example extends Component {
 
   render() {
     return (
-      <div>
+      <main>
         <TopBar>
           <TopBarTitle>Zooid UI</TopBarTitle>
         </TopBar>
@@ -50,12 +52,7 @@ class Example extends Component {
         <Section title="Top Bar">
           <TopBar>
             <TopBarTitle>Top Bar Title</TopBarTitle>
-            <TopBarNav>
-              <a className="TopBar-navLink TopBar-navLink--active">Link 1</a>
-              <a className="TopBar-navLink">Link 2</a>
-              <a className="TopBar-navLink">Link 3</a>
-              <a className="TopBar-navLink">Link 4</a>
-            </TopBarNav>
+            <TopBarNav></TopBarNav>
           </TopBar>
         </Section>
 
@@ -66,6 +63,7 @@ class Example extends Component {
             <a className="Nav-item">Link 3</a>
             <a className="Nav-item">Link 4</a>
           </Nav>
+        </Section>
 
         <Section title="Page">
           <Page>
@@ -186,17 +184,16 @@ class Example extends Component {
           <ChannelImage name="gotomeeting"/>
         </Section>
 
-        <Section title="Icons">
-        </Section>
+        <Section title="Icons"></Section>
 
         <Section title="Progress Bar">
           <ProgressBar completed={77}/>
         </Section>
 
         <Section title="Spinner">
-          <Spinner size="small"/>
+          <Spinner size="small" />
           <Spinner />
-          <Spinner size="large"/>
+          <Spinner size="large" />
         </Section>
 
         <Section title="Message">
@@ -224,7 +221,7 @@ class Example extends Component {
             </Message>
           </SubSection>
         </Section>
-      </div>
+      </main>
     )
   }
 }

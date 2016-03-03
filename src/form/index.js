@@ -3,9 +3,9 @@ import classNames from 'classnames'
 
 import './index.css'
 
-import FormActions from 'form-actions'
-import FormField from 'form-field'
-import FormInput from 'form-input'
+import FormActions from './form-actions'
+import FormField from './form-field'
+import FormInput from './form-input'
 
 class Form extends Component {
   constructor(props) {

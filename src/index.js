@@ -11,6 +11,7 @@ import { List, ListItem, ListItemIcon } from './list'
 import Message from './message'
 import { Page, PageActions, PageHeader, PageTitle } from './page'
 import ProgressBar from './progress-bar'
+import Spinner from './spinner'
 import { TopBar, TopBarTitle, TopBarNav } from './top-bar'
 
 export {
@@ -23,5 +24,6 @@ export {
   Message,
   Page, PageActions, PageHeader, PageTitle,
   ProgressBar,
+  Spinner,
   TopBar, TopBarTitle, TopBarNav
 }

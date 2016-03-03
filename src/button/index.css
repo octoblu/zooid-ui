@@ -2,7 +2,7 @@
   display: inline-block;
   border:none;
   border-radius: 2px;
-  padding: 12px 24px;
+  padding: 0.8em 1.25em;
 
   background: #E3E3E3;
 
@@ -15,7 +15,7 @@
   user-select: none;
   appearance: none;
   transition-delay: 0;
-  transition-duration: .33s;
+  transition-duration: .3s;
   transition-timing-function: ease-in;
   transition-property: background, border-color;
 }

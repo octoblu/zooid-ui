@@ -11,6 +11,7 @@ import {
   Message,
   Page, PageActions, PageHeader, PageTitle,
   ProgressBar,
+  Spinner,
   TopBar, TopBarTitle, TopBarNav
 } from '../src/index'
 
@@ -80,9 +81,9 @@ class Example extends Component {
           <Button kind="no-style">No Style Button</Button>
 
           <SubSection title="Button Sizes">
-            <Button size="large">Large Button</Button>
-            <Button size="regular">Regular Button</Button>
             <Button size="small">Small Button</Button>
+            <Button size="regular">Regular Button</Button>
+            <Button size="large">Large Button</Button>
           </SubSection>
 
           <SubSection title="Disabled Buttons">
@@ -168,6 +169,12 @@ class Example extends Component {
 
         <Section title="Progress Bar">
           <ProgressBar completed={77}/>
+        </Section>
+
+        <Section title="Spinner">
+          <Spinner size="small"/>
+          <Spinner />
+          <Spinner size="large"/>
         </Section>
 
         <Section title="Message">

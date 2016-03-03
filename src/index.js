@@ -6,6 +6,7 @@ import Breadcrumb from './breadcrumb'
 import Button from './button'
 import Card from './card'
 import ChannelImage from './channel-image'
+import { Form, FormActions, FormField, FormInput } from './form'
 import Icon from './icon'
 import { List, ListItem, ListItemIcon } from './list'
 import Message from './message'
@@ -21,6 +22,7 @@ export {
   Card,
   ChannelImage,
   Icon,
+  Form, FormActions, FormField, FormInput,
   List, ListItem, ListItemIcon,
   Message,
   Nav,

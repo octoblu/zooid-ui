@@ -2,6 +2,7 @@ import 'suitcss-base'
 import './styles/handglide/fonts.css'
 import './styles/base.css'
 
+import Breadcrumb from './breadcrumb'
 import Button from './button'
 import Card from './card'
 import ChannelImage from './channel-image'
@@ -13,6 +14,7 @@ import ProgressBar from './progress-bar'
 import { TopBar, TopBarTitle, TopBarNav } from './top-bar'
 
 export {
+  Breadcrumb,
   Button,
   Card,
   ChannelImage,

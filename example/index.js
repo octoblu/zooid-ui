@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import {
+  Breadcrumb,
   Button,
   Card,
   ChannelImage,
@@ -44,7 +45,7 @@ class Example extends Component {
         <TopBar>
           <TopBarTitle>Zooid UI</TopBarTitle>
         </TopBar>
-        
+
         <Section title="Top Bar">
           <TopBar>
             <TopBarTitle>Top Bar Title</TopBarTitle>
@@ -99,6 +100,33 @@ class Example extends Component {
 
           <SubSection title="Block Buttons">
             <Button block kind="primary">Block Button</Button>
+          </SubSection>
+        </Section>
+
+        <Section title="Breadcrumbs" className="Breadcrumbs">
+          <Breadcrumb fragments={[
+            {
+              label: 'My Gateblus',
+              slug: '/'
+            },
+            {
+              label: 'Fancy GateBlu',
+            }
+          ]}/>
+
+          <SubSection title="Breadcrumbs with custom components">
+            <Breadcrumb fragments={[
+              {
+                component: <Button href="/" kind="no-style">B for Button</Button>
+              },
+              {
+                label: 'Fancy GateBlu',
+                slug: '#'
+              },
+              {
+                label: 'Configure'
+              }
+            ]}/>
           </SubSection>
         </Section>
 

@@ -2,6 +2,7 @@ import 'suitcss-base'
 import './styles/handglide/fonts.css'
 import './styles/base.css'
 
+import AppBar from './app-bar'
 import Breadcrumb from './breadcrumb'
 import Button from './button'
 import Card from './card'
@@ -17,6 +18,7 @@ import Spinner from './spinner'
 import { TopBar, TopBarTitle, TopBarNav } from './top-bar'
 
 export {
+  AppBar,
   Breadcrumb,
   Button,
   Card,

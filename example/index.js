@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import {
+  AppBar,
   Breadcrumb,
   Button,
   Card,
@@ -48,6 +49,10 @@ class Example extends Component {
         <TopBar>
           <TopBarTitle>Zooid UI</TopBarTitle>
         </TopBar>
+
+        <Section title="Octoblu App Bar">
+          <AppBar octobluUrl="https://app.octoblu.com"/>
+        </Section>
 
         <Section title="Top Bar">
           <TopBar>

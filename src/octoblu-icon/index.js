@@ -5,9 +5,10 @@ import './index.css'
 
 const OctobluIcon = ({ type, className }) => {
   const classes = classNames('OctobluIcon', className)
-  let types = type.split(':')
-  let iconType = types[0]
-  let iconName = types[1]
+  const types = type.split(':')
+  const iconType = types[0]
+  const iconName = types[1]
+  
   const url = `https://icons.octoblu.com/${iconType}/${iconName}.svg`
 
   return <img src={url} className={classes} alt={type}/>

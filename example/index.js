@@ -8,7 +8,6 @@ import {
   Breadcrumb,
   Button,
   Card,
-  ChannelImage,
   Icon,
   Form, FormActions, FormField, FormInput,
   List, ListItem, ListItemIcon,
@@ -193,16 +192,13 @@ class Example extends Component {
           </SubSection>
         </Section>
 
-        <Section title="Channel Image" className="ChannelImages">
-          <ChannelImage name="twitter"/>
-          <ChannelImage name="sharefile"/>
-          <ChannelImage name="gotomeeting"/>
-        </Section>
-
         <Section title="Octoblu Icon" className="OctobluIcons">
           <OctobluIcon type="device:wemo"/>
           <OctobluIcon type="device:shell"/>
           <OctobluIcon type="device:other"/>
+          <OctobluIcon type="channel:sms-send"/>
+          <OctobluIcon type="channel:spotify"/>
+          <OctobluIcon type="channel:twitter"/>
         </Section>
 
         <Section title="Icons"></Section>

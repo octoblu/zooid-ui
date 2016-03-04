@@ -1,30 +1,17 @@
-.AppBar {
-  padding: 0;
-  height: 52px;
-  min-height: 52px;
-
-  color: #FFF;
-  font-family: 'citrixsans-regular', sans-serif;
-  text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px;
-  font-smoothing: antialiased;
-
-  background: #14568F;
-}
-
-.AppBar-section {
+.OctobluAppBar-nav {
   display: block;
   height: 100%;
 }
 
-.AppBar-section--primary {
+.OctobluAppBar-nav--primary {
   float: left;
 }
 
-.AppBar-section--secondary {
+.OctobluAppBar-nav--secondary {
   float: right;
 }
 
-.AppBar-link {
+.OctobluAppBar-link {
   border: none;
   display: inline-block;
   padding: 0 16px;
@@ -39,31 +26,33 @@
   cursor: pointer;
 }
 
-.AppBar-link:hover {
+.OctobluAppBar-link:hover {
   color: #FFF;
   text-decoration: none;
   background: rgba(0,0,0, 0.1);
 }
 
-.AppBar-link:focus {
+.OctobluAppBar-link:focus {
   outline: none;
 }
 
-.AppBar-link--active {}
+.OctobluAppBar-link--active {
 
-.AppBar-link-icon {
+}
+
+.OctobluAppBar-link-icon {
   font-size: 1.33333333em;
   line-height: 0.75em;
   vertical-align: -15%;
 }
 
-.AppBar-link--logo {
+.OctobluAppBar-link--logo {
   float: left;
   height: 52px;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.AppBar-logo {
+.OctobluAppBar-logo {
   display: block;
   float: left;
   margin-top: 13px;

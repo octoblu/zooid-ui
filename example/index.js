@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import {
   AppBar,
+  AppBarPrimary,
+  AppBarSecondary,
   Breadcrumb,
   Button,
   Card,
@@ -14,6 +16,7 @@ import {
   Nav,
   Page, PageActions, PageHeader, PageTitle,
   ProgressBar,
+  OctobluAppBar,
   Spinner,
   TopBar, TopBarTitle, TopBarNav
 } from '../src/index'
@@ -50,8 +53,15 @@ class Example extends Component {
           <TopBarTitle>Zooid UI</TopBarTitle>
         </TopBar>
 
+        <Section title="App Bar">
+          <AppBar>
+            <AppBarPrimary>Primary Section</AppBarPrimary>
+            <AppBarSecondary>Secondary Section</AppBarSecondary>
+          </AppBar>
+        </Section>
+
         <Section title="Octoblu App Bar">
-          <AppBar octobluUrl="https://app.octoblu.com"/>
+          <OctobluAppBar octobluUrl="https://app.octoblu.com"/>
         </Section>
 
         <Section title="Top Bar">
@@ -68,6 +78,33 @@ class Example extends Component {
             <a className="Nav-item">Link 3</a>
             <a className="Nav-item">Link 4</a>
           </Nav>
+        </Section>
+
+        <Section title="Breadcrumbs" className="Breadcrumbs">
+          <Breadcrumb fragments={[
+            {
+              label: 'My Gateblus',
+              slug: '/'
+            },
+            {
+              label: 'Fancy GateBlu',
+            }
+          ]}/>
+
+          <SubSection title="Breadcrumbs with custom components">
+            <Breadcrumb fragments={[
+              {
+                component: <Button href="/" kind="no-style">B for Button</Button>
+              },
+              {
+                label: 'Fancy GateBlu',
+                slug: '#'
+              },
+              {
+                label: 'Configure'
+              }
+            ]}/>
+          </SubSection>
         </Section>
 
         <Section title="Page">
@@ -126,33 +163,6 @@ class Example extends Component {
 
           <SubSection title="Block Buttons">
             <Button block kind="primary">Block Button</Button>
-          </SubSection>
-        </Section>
-
-        <Section title="Breadcrumbs" className="Breadcrumbs">
-          <Breadcrumb fragments={[
-            {
-              label: 'My Gateblus',
-              slug: '/'
-            },
-            {
-              label: 'Fancy GateBlu',
-            }
-          ]}/>
-
-          <SubSection title="Breadcrumbs with custom components">
-            <Breadcrumb fragments={[
-              {
-                component: <Button href="/" kind="no-style">B for Button</Button>
-              },
-              {
-                label: 'Fancy GateBlu',
-                slug: '#'
-              },
-              {
-                label: 'Configure'
-              }
-            ]}/>
           </SubSection>
         </Section>
 

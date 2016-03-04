@@ -2,7 +2,7 @@ import 'suitcss-base'
 import './styles/handglide/fonts.css'
 import './styles/base.css'
 
-import AppBar from './app-bar'
+import { AppBar, AppBarPrimary, AppBarSecondary } from './app-bar'
 import Breadcrumb from './breadcrumb'
 import Button from './button'
 import Card from './card'
@@ -14,11 +14,14 @@ import Message from './message'
 import Nav from './nav'
 import { Page, PageActions, PageHeader, PageTitle } from './page'
 import ProgressBar from './progress-bar'
+import OctobluAppBar from './octoblu-app-bar'
 import Spinner from './spinner'
 import { TopBar, TopBarTitle, TopBarNav } from './top-bar'
 
 export {
   AppBar,
+  AppBarPrimary,
+  AppBarSecondary,
   Breadcrumb,
   Button,
   Card,
@@ -30,6 +33,7 @@ export {
   Nav,
   Page, PageActions, PageHeader, PageTitle,
   ProgressBar,
+  OctobluAppBar,
   Spinner,
   TopBar, TopBarTitle, TopBarNav
 }

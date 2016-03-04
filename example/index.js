@@ -17,6 +17,7 @@ import {
   Page, PageActions, PageHeader, PageTitle,
   ProgressBar,
   OctobluAppBar,
+  OctobluIcon,
   Spinner,
   TopBar, TopBarTitle, TopBarNav
 } from '../src/index'
@@ -197,6 +198,12 @@ class Example extends Component {
           <ChannelImage name="twitter"/>
           <ChannelImage name="sharefile"/>
           <ChannelImage name="gotomeeting"/>
+        </Section>
+
+        <Section title="Octoblu Icon" className="OctobluIcons">
+          <OctobluIcon type="device:wemo"/>
+          <OctobluIcon type="device:shell"/>
+          <OctobluIcon type="device:other"/>
         </Section>
 
         <Section title="Icons"></Section>

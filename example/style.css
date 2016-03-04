@@ -22,6 +22,10 @@ body {
   margin: 0 16px 16px 0;
 }
 
-.ChannelImages .ChannelImage {
+.OctobluIcons .OctobluIcon {
+  max-width: 100px;
+}
+
+.ChannelImages .OctobluIcon {
   max-width: 100px;
 }

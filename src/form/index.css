@@ -1,5 +1,5 @@
 .Form {
-  font-family:"citrixsans-regular", Arial, Helvetica, sans-serif;
+  font-family: "citrixsans-regular", sans-serif;
   background: oldlace;
 }
 
@@ -11,20 +11,21 @@
 }
 
 .Form-label {
-  font-family:"citrixsans-bold", Arial, Helvetica, sans-serif;
+  font-family:"citrixsans-bold", sans-serif;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
 .Form-input {
-  border-radius: 3px;
+  border-radius: 2px;
   border: 1px solid #E6EAED;
   display: block;
-  padding: 10px;
+  padding: 0.6em 1em;
+  margin-bottom: 16px;
   width: 100%;
 
   font-size: 16px;
-  font-family: "citrixsans-regular", Arial, Helvetica, sans-serif;
+  font-family: "citrixsans-regular", sans-serif;
 
   -webkit-appearance: none;
 }

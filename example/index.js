@@ -68,7 +68,6 @@ class Example extends Component {
         <Section title="Top Bar">
           <TopBar>
             <TopBarTitle>Top Bar Title</TopBarTitle>
-            <TopBarNav></TopBarNav>
           </TopBar>
         </Section>
 

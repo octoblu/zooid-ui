@@ -3,8 +3,8 @@ import React, { PropTypes } from 'react'
 
 import './index.css'
 
-const OctobluIcon = ({ type, className }) => {
-  const classes = classNames('OctobluIcon', className)
+const DeviceIcon = ({ type, className }) => {
+  const classes = classNames('DeviceIcon', className)
   const types = type.split(':')
   const iconType = types[0]
   const iconName = types[1]
@@ -14,9 +14,9 @@ const OctobluIcon = ({ type, className }) => {
   return <img src={url} className={classes} alt={type}/>
 }
 
-OctobluIcon.propTypes = {
+DeviceIcon.propTypes = {
   type: PropTypes.string.isRequired,
   className: PropTypes.string
 }
 
-export default OctobluIcon
+export default DeviceIcon

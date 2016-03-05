@@ -14,7 +14,7 @@ import Nav from './nav'
 import { Page, PageActions, PageHeader, PageTitle } from './page'
 import ProgressBar from './progress-bar'
 import OctobluAppBar from './octoblu-app-bar'
-import OctobluIcon from './octoblu-icon'
+import DeviceIcon from './device-icon'
 import Spinner from './spinner'
 import { TopBar, TopBarTitle, TopBarNav } from './top-bar'
 
@@ -33,7 +33,7 @@ export {
   Page, PageActions, PageHeader, PageTitle,
   ProgressBar,
   OctobluAppBar,
-  OctobluIcon,
+  DeviceIcon,
   Spinner,
   TopBar, TopBarTitle, TopBarNav
 }

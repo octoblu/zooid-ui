@@ -16,7 +16,7 @@ import {
   Page, PageActions, PageHeader, PageTitle,
   ProgressBar,
   OctobluAppBar,
-  OctobluIcon,
+  DeviceIcon,
   Spinner,
   TopBar, TopBarTitle, TopBarNav
 } from '../src/index'
@@ -175,7 +175,7 @@ class Example extends Component {
           <FormField label="Device Name" name="deviceName">
             <FormInput name="deviceName" />
           </FormField>
-          
+
           <FormField label="Device Name" name="deviceName" required>
             <FormInput name="deviceName" />
           </FormField>
@@ -208,13 +208,13 @@ class Example extends Component {
           </SubSection>
         </Section>
 
-        <Section title="Octoblu Icon" className="OctobluIcons">
-          <OctobluIcon type="device:wemo"/>
-          <OctobluIcon type="device:shell"/>
-          <OctobluIcon type="device:other"/>
-          <OctobluIcon type="channel:sms-send"/>
-          <OctobluIcon type="channel:spotify"/>
-          <OctobluIcon type="channel:twitter"/>
+        <Section title="Device Icon" className="DeviceIcons">
+          <DeviceIcon type="device:wemo"/>
+          <DeviceIcon type="device:shell"/>
+          <DeviceIcon type="device:other"/>
+          <DeviceIcon type="channel:sms-send"/>
+          <DeviceIcon type="channel:spotify"/>
+          <DeviceIcon type="channel:twitter"/>
         </Section>
 
         <Section title="Icons"></Section>

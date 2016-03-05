@@ -175,6 +175,10 @@ class Example extends Component {
           <FormField label="Device Name" name="deviceName">
             <FormInput name="deviceName" />
           </FormField>
+          
+          <FormField label="Device Name" name="deviceName" required>
+            <FormInput name="deviceName" />
+          </FormField>
         </Section>
 
         <Section title="Card" className="Cards">

@@ -3,12 +3,19 @@ import classNames from 'classnames'
 
 import './index.css'
 
-const FormField = ({ children, className, label, name }) => {
+import FormLabel from './form-label'
+
+const FormField = ({ children, className, label, name, required }) => {
   const componentClass = classNames('Form-field', className)
 
   let formLabel = null
-  if (label)  {
-    formLabel = <label className="Form-label" htmlFor={name}>{label}</label>
+  if (label) {
+    formLabel = <FormLabel
+      htmlFor={name}
+      required={required}
+    >
+      {label}
+    </FormLabel>
   }
 
   return <div className={componentClass}>
@@ -18,10 +25,11 @@ const FormField = ({ children, className, label, name }) => {
 }
 
 FormField.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
   label: PropTypes.string,
   name: PropTypes.string,
-  className: PropTypes.string,
-  children: PropTypes.node
+  required: PropTypes.bool
 }
 
 export default FormField

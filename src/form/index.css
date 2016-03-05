@@ -39,7 +39,7 @@
 }
 
 .Form-input:disabled {
-  background-color: #fafbfb;
+  background-color: #F3F6F7;
   cursor: not-allowed;
 }
 
@@ -49,4 +49,11 @@
 }
 
 .Form-actions {
+}
+
+.Form-labelRequired,
+.Form-labelRequired[title] {
+  border: none;
+  color: #c23934;
+  margin-right: 0.2em;
 }

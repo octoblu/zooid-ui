@@ -10,6 +10,7 @@ import {
   Card,
   Icon,
   Form, FormActions, FormField, FormInput,
+  Lookup,
   List, ListItem, ListItemIcon,
   Message,
   Nav,
@@ -179,6 +180,10 @@ class Example extends Component {
           <FormField label="Device Name" name="deviceName" required>
             <FormInput name="deviceName" />
           </FormField>
+        </Section>
+
+        <Section title="Lookup">
+          <Lookup onChange={(e) => { console.log('Lookup onChange:', e.target.value) }} />
         </Section>
 
         <Section title="Card" className="Cards">

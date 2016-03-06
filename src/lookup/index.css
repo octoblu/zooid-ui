@@ -1,0 +1,20 @@
+.Lookup {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  border-radius: 2px;
+  border: 1px solid #E6EAED;
+  background:#FFF;
+
+  font-size: 16px;
+  font-family: "citrixsans-regular", sans-serif;
+}
+
+.Lookup-input {
+  margin-bottom: 0;
+}
+
+.Lookup-icon {
+  padding-left: 1em;
+}

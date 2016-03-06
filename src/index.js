@@ -9,6 +9,7 @@ import Card from './card'
 import { Form, FormActions, FormField, FormInput } from './form'
 import Icon from './icon'
 import { List, ListItem, ListItemIcon } from './list'
+import Lookup from './lookup'
 import Message from './message'
 import Nav from './nav'
 import { Page, PageActions, PageHeader, PageTitle } from './page'
@@ -27,6 +28,7 @@ export {
   Card,
   Icon,
   Form, FormActions, FormField, FormInput,
+  Lookup,
   List, ListItem, ListItemIcon,
   Message,
   Nav,

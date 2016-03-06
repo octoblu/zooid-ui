@@ -10,7 +10,11 @@ class FormInput extends Component {
 
   render() {
     const { props } = this
-    const componentClass = classNames('Form-input', props.className)
+    const componentClass = classNames(
+      'Form-input',
+      {'Form-input--unstyled': props.unstyled}, 
+      props.className
+    )
 
     return <input {...props} className={componentClass} />
   }

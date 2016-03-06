@@ -5,8 +5,6 @@ import React, { Component, PropTypes } from 'react'
 import './index.css'
 
 import Button from '../button'
-import FormInput from '../form/form-input'
-import Icon from '../icon'
 
 const ctaButton = (cta, action) => {
   if (!cta) return null

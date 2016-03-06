@@ -8,6 +8,7 @@ import {
   Breadcrumb,
   Button,
   Card,
+  EmptyState,
   Icon,
   Form, FormActions, FormField, FormInput,
   Lookup,
@@ -184,6 +185,15 @@ class Example extends Component {
 
         <Section title="Lookup">
           <Lookup onChange={(e) => { console.log('Lookup onChange:', e.target.value) }} />
+        </Section>
+
+        <Section title="Empty State">
+          <EmptyState
+            title="Why is the state empty state"
+            description="Help text describing how to leave the empty state."
+            cta="Call to Action"
+            action={() => { console.log('Bang!') }}
+          />
         </Section>
 
         <Section title="Card" className="Cards">

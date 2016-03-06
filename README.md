@@ -8,7 +8,7 @@ A collection of UI components for React projects.
 ## todo
 
 - [x] Lookup (Filter)
-- [ ] Empty State
+- [x] Empty State
 - [ ] Error State
 - [ ] Text Area
 - [ ] Select

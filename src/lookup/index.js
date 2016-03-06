@@ -7,25 +7,18 @@ import './index.css'
 import Icon from '../icon'
 import FormInput from '../form/form-input'
 
-class Lookup extends Component {
-  constructor() {
-    super()
-  }
+const Lookup = ({ className, onChange, placeholder }) => {
+  const classes = classNames('Lookup', className)
 
-  render() {
-    const { className, onChange, placeholder } = this.props
-    const classes = classNames('Lookup', className)
-
-    return <div className={classes}>
-      <Icon name="MdSearch" className="Lookup-icon" />
-      <FormInput
-        onChange={onChange}
-        placeholder={placeholder}
-        className="Lookup-input"
-        unstyled
-      />
-    </div>
-  }
+  return <div className={classes}>
+    <Icon name="MdSearch" className="Lookup-icon" />
+    <FormInput
+      onChange={onChange}
+      placeholder={placeholder}
+      className="Lookup-input"
+      unstyled
+    />
+  </div>
 }
 
 Lookup.defaultProps = {

@@ -5,8 +5,8 @@ import React, { Component, PropTypes } from 'react'
 import './index.css'
 
 class Button extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
   }
 
   render() {

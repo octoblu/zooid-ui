@@ -13,7 +13,7 @@ const ctaButton = (cta, action) => {
     return <Button href={action} kind="primary">{cta}</Button>
   }
 
-  return <Button kind="primary" onClick={action}>{cta}ss</Button>
+  return <Button kind="primary" onClick={action}>{cta}</Button>
 }
 
 const EmptyState = ({ action, className, cta, description, title }) => {

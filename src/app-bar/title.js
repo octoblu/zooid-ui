@@ -1,19 +1,15 @@
 import classNames from 'classnames'
 import React, { Component, PropTypes } from 'react'
 
-const AppBarPrimary = ({children, className}) => {
-  const classes = classNames(
-    'AppBar-section',
-    'AppBar-section--primary',
-    className
-  )
+const AppBarTitle = ({children, className}) => {
+  const classes = classNames('AppBar-title', className)
 
   return <div className={classes}>{children}</div>
 }
 
-AppBarPrimary.propTypes = {
+AppBarTitle.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string
 }
 
-export default AppBarPrimary
+export default AppBarTitle

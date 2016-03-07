@@ -11,6 +11,15 @@
   background: #14568F;
 }
 
+.AppBar-title {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+
+  color: #FFF;
+  font-size: 20px;
+}
+
 .AppBar-section {
   display: block;
   height: 100%;

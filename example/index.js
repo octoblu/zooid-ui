@@ -61,6 +61,10 @@ class Example extends Component {
             <AppBarPrimary>Primary Section</AppBarPrimary>
             <AppBarSecondary>Secondary Section</AppBarSecondary>
           </AppBar>
+
+          <AppBar title="App Title passed in as prop to AppBar">
+            <AppBarSecondary>Secondary Section</AppBarSecondary>
+          </AppBar>
         </Section>
 
         <Section title="Octoblu App Bar">
@@ -113,6 +117,12 @@ class Example extends Component {
           <Page>
             <PageHeader>
               <PageTitle>Page Title Goes Here</PageTitle>
+              <PageActions>Page Actions</PageActions>
+            </PageHeader>
+          </Page>
+
+          <Page>
+            <PageHeader title="Page Title passed in as prop to Page header">
               <PageActions>Page Actions</PageActions>
             </PageHeader>
           </Page>

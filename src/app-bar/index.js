@@ -7,14 +7,27 @@ import AppBarPrimary from './primary'
 import AppBarSecondary from './secondary'
 import AppBarTitle from './title'
 
-const AppBar = ({children, className}) => {
+
+const appTitle = (title) => {
+  if (title) return <AppBarPrimary>
+    <AppBarTitle>{title}</AppBarTitle>
+  </AppBarPrimary>
+
+  return null
+}
+
+const AppBar = ({children, className, title}) => {
   const classes = classNames('AppBar', className)
-  return <div className={classes}>{children}</div>
+  return <div className={classes}>
+    {appTitle(title)}
+    {children}
+  </div>
 }
 
 AppBar.propTypes = {
   children: PropTypes.node.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  title: PropTypes.string
 }
 
 export { AppBar, AppBarPrimary, AppBarSecondary, AppBarTitle }

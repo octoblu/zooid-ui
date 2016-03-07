@@ -6,9 +6,12 @@ import { AppBar, AppBarPrimary, AppBarSecondary } from './app-bar'
 import Breadcrumb from './breadcrumb'
 import Button from './button'
 import Card from './card'
+import EmptyState from './empty-state'
+import ErrorState from './error-state'
 import { Form, FormActions, FormField, FormInput } from './form'
 import Icon from './icon'
 import { List, ListItem, ListItemIcon } from './list'
+import Lookup from './lookup'
 import Message from './message'
 import Nav from './nav'
 import { Page, PageActions, PageHeader, PageTitle } from './page'
@@ -25,8 +28,11 @@ export {
   Breadcrumb,
   Button,
   Card,
+  EmptyState,
+  ErrorState,
   Icon,
   Form, FormActions, FormField, FormInput,
+  Lookup,
   List, ListItem, ListItemIcon,
   Message,
   Nav,

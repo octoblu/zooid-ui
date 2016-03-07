@@ -8,8 +8,11 @@ import {
   Breadcrumb,
   Button,
   Card,
+  EmptyState,
+  ErrorState,
   Icon,
   Form, FormActions, FormField, FormInput,
+  Lookup,
   List, ListItem, ListItemIcon,
   Message,
   Nav,
@@ -179,6 +182,25 @@ class Example extends Component {
           <FormField label="Device Name" name="deviceName" required>
             <FormInput name="deviceName" />
           </FormField>
+        </Section>
+
+        <Section title="Lookup">
+          <Lookup onChange={(e) => { console.log('Lookup onChange:', e.target.value) }} />
+        </Section>
+
+        <Section title="Empty State">
+          <EmptyState
+            title="Why is the state empty state"
+            description="Help text describing how to leave the empty state."
+            cta="Call to Action"
+            action={() => { console.log('Bang!') }}
+          />
+        </Section>
+
+        <Section title="Error State">
+          <ErrorState
+            description="Help text describing the error"
+          />
         </Section>
 
         <Section title="Card" className="Cards">

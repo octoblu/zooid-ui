@@ -23,11 +23,17 @@
   padding: 0.6em 1em;
   margin-bottom: 16px;
   width: 100%;
+  background:#FFF;
 
   font-size: 16px;
   font-family: "citrixsans-regular", sans-serif;
 
   -webkit-appearance: none;
+}
+
+.Form-input--unstyled {
+  border-color: transparent;
+  background: transparent;
 }
 
 .Form-input:focus {
@@ -36,6 +42,12 @@
   background-color: #f8fdff;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px rgba(19, 133, 229, 0.1);
   transition: all 0.2s ease-in;
+}
+
+.Form-input--unstyled:focus {
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .Form-input:disabled {

@@ -1,0 +1,16 @@
+.EmptyState {
+  text-align: center;
+}
+
+.EmptyState-title {
+  margin-bottom: 16px;
+  
+  font-family: 'citrixsans-semibold', sans-serif;
+  font-size: 32px;
+  white-space: nowrap;
+}
+
+.EmptyState-description {
+  margin-bottom: 16px;
+  letter-spacing: 0.7px;
+}

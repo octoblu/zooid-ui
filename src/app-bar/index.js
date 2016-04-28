@@ -25,7 +25,7 @@ const AppBar = ({children, className, title}) => {
 }
 
 AppBar.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   className: PropTypes.string,
   title: PropTypes.string
 }

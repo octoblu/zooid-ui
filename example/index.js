@@ -166,6 +166,12 @@ class Example extends Component {
             <Button kind="neutral"><Icon name="MdWarning"/> Ummm...</Button>
           </SubSection>
 
+          <SubSection title="Other Icon Buttons">
+            <Button kind="primary"><Icon type="fa" name="FaAdjust"/> Font Awesome Icon</Button>
+            <Button kind="approve"><Icon type="ti" name="TiArrowMoveOutline"/> Typicons</Button>
+            <Button kind="neutral"><Icon type="go" name="GoBroadcast"/> Github Octicons</Button>
+          </SubSection>
+
           <SubSection title="Icon Only Buttons">
             <Button kind="primary"><Icon name="MdAdd"/></Button>
             <Button kind="approve"><Icon name="MdCheck"/></Button>

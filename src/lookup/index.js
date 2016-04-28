@@ -1,17 +1,16 @@
 import blacklist from 'blacklist'
 import classNames from 'classnames'
 import React, { Component, PropTypes } from 'react'
-
+import MdSearch from 'react-icons/lib/md/search';
 import './index.css'
 
-import Icon from '../icon'
 import FormInput from '../form/form-input'
 
 const Lookup = ({ className, onChange, placeholder }) => {
   const classes = classNames('Lookup', className)
 
   return <div className={classes}>
-    <Icon name="MdSearch" className="Lookup-icon" />
+    <i className="Lookup-icon" role="icon"><MdSearch /></i>
     <FormInput
       onChange={onChange}
       placeholder={placeholder}

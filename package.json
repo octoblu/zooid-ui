@@ -1,6 +1,6 @@
 {
   "name": "zooid-ui",
-  "version": "4.2.0",
+  "version": "5.0.0",
   "description": "A collection of UI components for React projects.",
   "main": "dist/index.js",
   "style": "dist/style.css",
@@ -58,7 +58,7 @@
     "blacklist": "^1.1.2",
     "classnames": "^2.2.3",
     "react": "^0.14.7",
-    "react-icons": "^1.0.3",
+    "react-icons": "^2.0.1",
     "suitcss-base": "^1.0.2"
   }
 }

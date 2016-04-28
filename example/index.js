@@ -10,10 +10,9 @@ import {
   Card,
   EmptyState,
   ErrorState,
-  Icon,
   Form, FormActions, FormField, FormInput,
   Lookup,
-  List, ListItem, ListItemIcon,
+  List, ListItem,
   Message,
   Nav,
   Page, PageActions, PageHeader, PageTitle,
@@ -159,26 +158,6 @@ class Example extends Component {
             <Button disabled kind="no-style">No Style Button</Button>
           </SubSection>
 
-          <SubSection title="Icon Buttons">
-            <Button kind="primary"><Icon name="MdAdd"/> Add Device</Button>
-            <Button kind="approve"><Icon name="MdCheck"/> Approve</Button>
-            <Button kind="danger"><Icon name="MdWarning"/> Reject</Button>
-            <Button kind="neutral"><Icon name="MdWarning"/> Ummm...</Button>
-          </SubSection>
-
-          <SubSection title="Other Icon Buttons">
-            <Button kind="primary"><Icon type="fa" name="FaAdjust"/> Font Awesome Icon</Button>
-            <Button kind="approve"><Icon type="ti" name="TiArrowMoveOutline"/> Typicons</Button>
-            <Button kind="neutral"><Icon type="go" name="GoBroadcast"/> Github Octicons</Button>
-          </SubSection>
-
-          <SubSection title="Icon Only Buttons">
-            <Button kind="primary"><Icon name="MdAdd"/></Button>
-            <Button kind="approve"><Icon name="MdCheck"/></Button>
-            <Button kind="danger"><Icon name="MdWarning"/></Button>
-            <Button kind="neutral"><Icon name="MdWarning"/></Button>
-          </SubSection>
-
           <SubSection title="Block Buttons">
             <Button block kind="primary">Block Button</Button>
           </SubSection>
@@ -234,12 +213,10 @@ class Example extends Component {
           <SubSection title="Lists with Icons">
             <List>
               <ListItem>
-                <ListItemIcon name="MdPerson"/>
                 Donald Trump
               </ListItem>
 
               <ListItem>
-                <ListItemIcon name="MdPerson"/>
                 Kanye West
               </ListItem>
             </List>

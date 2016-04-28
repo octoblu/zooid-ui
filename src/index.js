@@ -9,8 +9,7 @@ import Card from './card'
 import EmptyState from './empty-state'
 import ErrorState from './error-state'
 import { Form, FormActions, FormField, FormInput } from './form'
-import Icon from './icon'
-import { List, ListItem, ListItemIcon } from './list'
+import { List, ListItem } from './list'
 import Lookup from './lookup'
 import Message from './message'
 import Nav from './nav'
@@ -30,10 +29,9 @@ export {
   Card,
   EmptyState,
   ErrorState,
-  Icon,
   Form, FormActions, FormField, FormInput,
   Lookup,
-  List, ListItem, ListItemIcon,
+  List, ListItem,
   Message,
   Nav,
   Page, PageActions, PageHeader, PageTitle,

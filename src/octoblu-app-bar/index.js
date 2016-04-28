@@ -1,9 +1,9 @@
 import classnames from 'classnames'
 import React, { Component, PropTypes } from 'react'
-import { FaCog } from 'react-icons/lib/fa'
+import FaCog from 'react-icons/lib/fa/cog'
 import { AppBar, AppBarPrimary, AppBarSecondary} from '../app-bar'
 
-import './index.css'
+import './index.css';
 
 export default class OctobluAppBar extends Component {
   state = {
@@ -55,7 +55,7 @@ export default class OctobluAppBar extends Component {
           {this.renderSettingsNav()}
 
           <button onClick={this.toggleSettings} aria-label="Open settings menu" className="OctobluAppBar-link">
-            <FaCog className="OctobluAppBar-link-icon"/>
+            <i className="OctobluAppBar-link-icon" role="icon"><FaCog /></i>
           </button>
         </nav>
       </AppBarSecondary>

@@ -56,14 +56,19 @@ class Example extends Component {
         </TopBar>
 
         <Section title="App Bar">
-          <AppBar>
-            <AppBarPrimary>Primary Section</AppBarPrimary>
-            <AppBarSecondary>Secondary Section</AppBarSecondary>
-          </AppBar>
 
-          <AppBar title="App Title passed in as prop to AppBar">
-            <AppBarSecondary>Secondary Section</AppBarSecondary>
-          </AppBar>
+          <SubSection title="With App Bar Primary Content">
+            <AppBar>
+              <AppBarPrimary>Primary Section</AppBarPrimary>
+              <AppBarSecondary>Secondary Section</AppBarSecondary>
+            </AppBar>
+          </SubSection>
+
+          <SubSection title="With App Bar Title as prop">
+            <AppBar title="App Title passed in as prop to AppBar">
+              <AppBarSecondary>Secondary Section</AppBarSecondary>
+            </AppBar>
+          </SubSection>
         </Section>
 
         <Section title="Octoblu App Bar">

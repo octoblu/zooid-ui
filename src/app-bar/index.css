@@ -3,6 +3,10 @@
   height: 52px;
   min-height: 52px;
 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   color: #FFF;
   font-family: 'citrixsans-regular', sans-serif;
   text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px;
@@ -13,8 +17,11 @@
 
 .AppBar-title {
   flex: 1;
-  margin: 0;
+
+  display: flex;
+  margin: 0 0 0 16px;
   padding: 0;
+  align-items: center;
 
   color: #FFF;
   font-size: 20px;
@@ -26,11 +33,19 @@
 }
 
 .AppBar-section--primary {
-  float: left;
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .AppBar-section--secondary {
-  float: right;
+  flex-grow: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .AppBar-link {

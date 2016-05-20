@@ -7,15 +7,25 @@ import PageActions from './actions'
 import PageHeader from './header'
 import PageTitle from './title'
 
-const AppTitle = (title) => {
-  if (title) return <PageTitle>{title}</PageTitle>
-  return null
+const PAGE_WIDTHS = ['medium', 'large', 'small', 'full']
+
+const propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  width: PropTypes.oneOf(PAGE_WIDTHS),
 }
 
-const Page = ({ children, className }) => {
-  const classes = classNames('Page', className)
+const defaultProps = {
+  width: PAGE_WIDTHS[0],
+}
+
+const Page = ({ children, className, width }) => {
+  const classes = classNames('Page', `Page--${width}`, className)
 
   return <main className={classes}>{children}</main>
 }
+
+Page.propTypes    = propTypes
+Page.defaultProps = defaultProps
 
 export {Page, PageActions, PageHeader, PageTitle}

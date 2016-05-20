@@ -1,8 +1,19 @@
 .Page {
   min-height: 100%;
   width: 100%;
-  max-width: 1044px;
   margin: 32px auto;
+}
+
+.Page--small {
+  max-width: 800px;
+}
+
+.Page--medium {
+  max-width: 1044px;
+}
+
+.Page--large {
+  max-width: 1600px;
 }
 
 .Page-header {

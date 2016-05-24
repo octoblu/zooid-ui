@@ -9,7 +9,9 @@ A collection of UI components for React projects.
 
 - [x] Lookup (Filter)
 - [x] Empty State
-- [ ] Error State
+- [x] Error State
+- [x] Toast
+- [ ] Spinner
 - [ ] Text Area
 - [ ] Select
 - [ ] Checkbox

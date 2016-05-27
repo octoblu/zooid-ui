@@ -19,6 +19,8 @@ import OctobluAppBar from './octoblu-app-bar'
 import DeviceIcon from './device-icon'
 import Spinner from './spinner'
 import { TopBar, TopBarTitle, TopBarNav } from './top-bar'
+import { Dialog, DialogActions, DialogBody, DialogHeader } from 'zooid-ui-dialog'
+
 
 export {
   AppBar,
@@ -39,5 +41,6 @@ export {
   OctobluAppBar,
   DeviceIcon,
   Spinner,
-  TopBar, TopBarTitle, TopBarNav
+  TopBar, TopBarTitle, TopBarNav,
+  Dialog, DialogActions, DialogBody, DialogHeader
 }

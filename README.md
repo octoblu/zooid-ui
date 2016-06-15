@@ -11,10 +11,31 @@ A collection of UI components for React projects.
 - [x] Empty State
 - [x] Error State
 - [x] Toast
-- [ ] Spinner
+- [x] Spinner
 - [ ] Text Area
 - [ ] Select
 - [ ] Checkbox
 - [ ] Badges
 - [ ] Radio
 - [ ] Menu
+
+## Extract
+
+- [ ] App-bar
+- [ ] Breadcrumb
+- [ ] Button
+- [ ] Card
+- [ ] Device-icon
+- [ ] Empty-state
+- [ ] Error-state
+- [ ] Form
+- [ ] List
+- [ ] Lookup
+- [ ] Message
+- [ ] Nav
+- [ ] Octoblu-app-bar
+- [ ] Page
+- [ ] Progress-bar
+- [ ] Spinner
+- [ ] Styles
+- [ ] Top-bar

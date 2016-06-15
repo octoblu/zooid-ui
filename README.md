@@ -23,7 +23,7 @@ A collection of UI components for React projects.
 
 - [ ] App-bar
 - [ ] Breadcrumb
-- [ ] Button
+- [x] Button
 - [ ] Card
 - [ ] Device-icon
 - [ ] Empty-state

@@ -36,6 +36,6 @@ A collection of UI components for React projects.
 - [ ] Octoblu-app-bar
 - [ ] Page
 - [ ] Progress-bar
-- [ ] Spinner
+- [x] Spinner
 - [ ] Styles
 - [ ] Top-bar

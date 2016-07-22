@@ -1,6 +1,6 @@
 {
   "name": "zooid-ui",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "A collection of UI components for React projects.",
   "main": "dist/index.js",
   "style": "dist/style.css",

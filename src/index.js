@@ -7,7 +7,6 @@ import Breadcrumb from './breadcrumb'
 import Button from './button'
 import Card from './card'
 import EmptyState from './empty-state'
-import ErrorState from './error-state'
 import { Form, FormActions, FormField, FormInput } from './form'
 import { List, ListItem } from './list'
 import Lookup from './lookup'
@@ -30,7 +29,6 @@ export {
   Button,
   Card,
   EmptyState,
-  ErrorState,
   Form, FormActions, FormField, FormInput,
   Lookup,
   List, ListItem,

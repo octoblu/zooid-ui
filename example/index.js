@@ -9,7 +9,6 @@ import {
   Button,
   Card,
   EmptyState,
-  ErrorState,
   Form, FormActions, FormField, FormInput,
   Lookup,
   List, ListItem,
@@ -201,12 +200,6 @@ class Example extends Component {
             description="Help text describing how to leave the empty state."
             cta="Call to Action"
             action={() => { console.log('Bang!') }}
-          />
-        </Section>
-
-        <Section title="Error State">
-          <ErrorState
-            description="Help text describing the error"
           />
         </Section>
 

@@ -17,7 +17,6 @@ import {
   Page, PageActions, PageHeader, PageTitle,
   ProgressBar,
   OctobluAppBar,
-  DeviceIcon,
   Spinner,
   TopBar, TopBarTitle, TopBarNav,
 } from '../src/index'
@@ -244,15 +243,6 @@ class Example extends Component {
               <Button onClick={() => this.setState({ showDialog: !this.state.showDialog })}>OK!</Button>
             </DialogActions>
           </Dialog>
-        </Section>
-
-        <Section title="Device Icon" className="DeviceIcons">
-          <DeviceIcon type="device:wemo"/>
-          <DeviceIcon type="device:shell"/>
-          <DeviceIcon type="device:other"/>
-          <DeviceIcon type="channel:sms-send"/>
-          <DeviceIcon type="channel:spotify"/>
-          <DeviceIcon type="channel:twitter"/>
         </Section>
 
         <Section title="Icons"></Section>

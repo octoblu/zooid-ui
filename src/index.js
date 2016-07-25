@@ -15,7 +15,6 @@ import Nav from './nav'
 import { Page, PageActions, PageHeader, PageTitle } from './page'
 import ProgressBar from './progress-bar'
 import OctobluAppBar from './octoblu-app-bar'
-import DeviceIcon from './device-icon'
 import Spinner from './spinner'
 import { TopBar, TopBarTitle, TopBarNav } from './top-bar'
 import { Dialog, DialogActions, DialogBody, DialogHeader } from 'zooid-ui-dialog'
@@ -37,7 +36,6 @@ export {
   Page, PageActions, PageHeader, PageTitle,
   ProgressBar,
   OctobluAppBar,
-  DeviceIcon,
   Spinner,
   TopBar, TopBarTitle, TopBarNav,
   Dialog, DialogActions, DialogBody, DialogHeader

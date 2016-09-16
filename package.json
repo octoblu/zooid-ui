@@ -10,7 +10,7 @@
     "build": "npm run clean && npm run build:webpack",
     "start": "node dev-server.js",
     "lint": "eslint src/index.js",
-    "test": "istanbul cover _mocha -- -R spec --require coffee-coverage/register-istanbul && mocha --reporter json > coverage/mocha.json"
+    "test": "nyc --require babel-core/register --require babel-polyfill mocha"
   },
   "repository": {
     "type": "git",

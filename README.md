@@ -2,8 +2,13 @@
 A collection of UI components for React projects.
 
 [![Build Status](https://travis-ci.org/octoblu/zooid-ui.svg?branch=master)](https://travis-ci.org/octoblu/zooid-ui)
-[![npm version](https://badge.fury.io/js/zooid-ui.svg)](http://badge.fury.io/js/zooid-ui)
-[![Gitter](https://badges.gitter.im/octoblu/help.svg)](https://gitter.im/octoblu/help)
+[![Test Coverage](https://codecov.io/gh/octoblu/zooid-ui/branch/master/graph/badge.svg)](https://codecov.io/gh/octoblu/zooid-ui)
+[![Dependency status](http://img.shields.io/david/octoblu/zooid-ui.svg?style=flat)](https://david-dm.org/octoblu/zooid-ui)
+[![devDependency Status](http://img.shields.io/david/dev/octoblu/zooid-ui.svg?style=flat)](https://david-dm.org/octoblu/zooid-ui#info=devDependencies)
+[![Slack Status](http://community-slack.octoblu.com/badge.svg)](http://community-slack.octoblu.com)
+
+[![NPM](https://nodei.co/npm/zooid-ui.svg?style=flat)](https://npmjs.org/package/zooid-ui)
+
 
 ## todo
 

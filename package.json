@@ -9,7 +9,8 @@
     "build:webpack": "NODE_ENV=production webpack --progress --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
     "start": "node dev-server.js",
-    "lint": "eslint src/index.js"
+    "lint": "eslint src/index.js",
+    "test": "istanbul cover _mocha -- -R spec --require coffee-coverage/register-istanbul && mocha --reporter json > coverage/mocha.json"
   },
   "repository": {
     "type": "git",

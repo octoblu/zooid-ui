@@ -10,7 +10,10 @@
     "build": "npm run clean && npm run build:webpack",
     "start": "node dev-server.js",
     "lint": "eslint src/index.js",
-    "test": "nyc --require babel-core/register --require babel-polyfill mocha"
+    "test": "mocha",
+    "coverage": "nyc npm test",
+    "mocha:json": "mocha --reporter json > coverage/mocha.json",
+    "test:watch": "mocha -w -R mocha-multi --reporter-options spec=-,mocha-osx-reporter=-"
   },
   "repository": {
     "type": "git",
@@ -62,5 +65,20 @@
     "react-icons": "^2.1.0",
     "suitcss-base": "^2.0.0",
     "zooid-ui-dialog": "^1.0.0"
+  },
+  "nyc": {
+    "cache": true,
+    "reporter": [
+      "text-summary",
+      "lcov",
+      "json"
+    ],
+    "require": [
+      "babel-core/register",
+      "babel-polyfill"
+    ],
+    "extension": [
+      ".coffee"
+    ]
   }
 }

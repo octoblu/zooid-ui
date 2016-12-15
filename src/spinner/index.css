@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'CitrixIconFont';
-  src: url(https://workspace.tryworkspaces.com/navbar/styles/fonts/citrixicons.eot);
-  src: url(https://workspace.tryworkspaces.com/navbar/styles/fonts/citrixicons.eot?#iefix) format('eot'), url(https://workspace.tryworkspaces.com/navbar/styles/fonts/citrixicons.woff) format('woff'), url(https://workspace.tryworkspaces.com/navbar/styles/fonts/citrixicons.ttf) format('truetype'), url(https://workspace.tryworkspaces.com/navbar/styles/fonts/citrixicons.svg#CitrixIconFont) format('svg');
+  src: url(//cdn.octoblu.com/fonts/citrixicons.eot);
+  src: url(//cdn.octoblu.com/fonts/citrixicons.svg#CitrixIconFont) format('svg');
 }
 
 .spinner-container {

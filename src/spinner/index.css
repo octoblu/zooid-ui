@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'CitrixIconFont';
   src: url(//cdn.octoblu.com/fonts/citrixicons.eot);
-  src: url(//cdn.octoblu.com/fonts/citrixicons.svg#CitrixIconFont) format('svg');
+  src: url(//cdn.octoblu.com/fonts/citrixicons.eot?#iefix) format('eot'), url(//cdn.octoblu.com/fonts/citrixicons.woff) format('woff'), url(//cdn.octoblu.com/fonts/citrixicons.ttf) format('truetype'), url(//cdn.octoblu.com/fonts/citrixicons.svg#CitrixIconFont) format('svg');
 }
 
 .spinner-container {
